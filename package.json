@@ -1,0 +1,11 @@
+{
+    "name": "@tolkam/lib-utils-ui",
+    "version": "1.0.0",
+    "description": "UI utility functions",
+    "main": "src/index.ts",
+    "license": "UNLICENSED",
+    "private": true,
+    "devDependencies": {
+        "tslib": "^1.9.3"
+    }
+}
