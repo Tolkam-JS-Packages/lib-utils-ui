@@ -38,6 +38,7 @@ export function getElements(input: any, parent: Document|HTMLElement = document)
  * Resolves input to HTML element
  *
  * @param input
+ * @param parent
  * @returns {HTMLElement|undefined}
  */
 export function getElement(input: any, parent: Document|HTMLElement = document): HTMLElement|undefined {
