@@ -5,3 +5,4 @@ export * from './scrollbarWidth';
 export * from './closestScrollingParent';
 export * from './getElements';
 export * from './supports';
+export * from './maybeMobile';
