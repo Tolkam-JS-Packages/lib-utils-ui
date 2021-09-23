@@ -1,4 +1,5 @@
-const BODY = document.body;
+const DOC = document;
+const HTML = DOC.documentElement;
 const regex = /(auto|scroll)/;
 
 /**
@@ -10,7 +11,7 @@ const regex = /(auto|scroll)/;
 const style = (element: HTMLElement, prop: string) => getComputedStyle(element, null).getPropertyValue(prop);
 
 /**
- * Tests if has overflow css value
+ * Tests if element has overflow css value
  *
  * @param el
  */
@@ -23,7 +24,7 @@ const hasScroll = (el: HTMLElement) => regex.test(
  *
  * @param el
  */
-export const closestScrollingParent = (el?: HTMLElement): HTMLElement|undefined => {
-    return el == null || el === BODY ? BODY :
+export const closestScrollingParent = (el?: HTMLElement): Document|HTMLElement|undefined => {
+    return el == null || el === HTML ? DOC :
         hasScroll(el) ? el : closestScrollingParent(el.parentNode as HTMLElement || null);
 };
