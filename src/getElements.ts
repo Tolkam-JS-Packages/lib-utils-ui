@@ -2,6 +2,7 @@
  * Resolves input to array of HTML elements
  *
  * @param input
+ * @param parent
  * @returns {HTMLElement[]}
  */
 export function getElements(input: any, parent: Document|HTMLElement = document): HTMLElement[] {

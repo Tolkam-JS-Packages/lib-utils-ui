@@ -1,7 +1,7 @@
 /**
  * Cross-browser CSS.supports() helper
  *
- * Old spec function name (window.supportsCSS) and syntax (Opera 12.1) treated as not suppoted
+ * Old spec function name (window.supportsCSS) and syntax (Opera 12.1) treated as not supported
  *
  * @param {string} args
  * @return {any}
