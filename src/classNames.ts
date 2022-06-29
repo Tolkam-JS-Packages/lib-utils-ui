@@ -41,5 +41,10 @@ export function classNames(...args: any) {
         }
     }
 
-    return str;
+    return str !== '' ? str : undefined;
+}
+
+export function classNamesLegacy(...args: any) {
+    const className = classNames(...args);
+    return className !== undefined ? className : '';
 }
